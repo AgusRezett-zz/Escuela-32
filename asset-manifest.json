@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Escuela-32/static/css/main.9829a6dc.chunk.css",
+    "main.js": "/Escuela-32/static/js/main.f34a9c42.chunk.js",
+    "main.js.map": "/Escuela-32/static/js/main.f34a9c42.chunk.js.map",
+    "runtime-main.js": "/Escuela-32/static/js/runtime-main.700d7dfb.js",
+    "runtime-main.js.map": "/Escuela-32/static/js/runtime-main.700d7dfb.js.map",
+    "static/js/2.912870cc.chunk.js": "/Escuela-32/static/js/2.912870cc.chunk.js",
+    "static/js/2.912870cc.chunk.js.map": "/Escuela-32/static/js/2.912870cc.chunk.js.map",
+    "index.html": "/Escuela-32/index.html",
+    "static/css/main.9829a6dc.chunk.css.map": "/Escuela-32/static/css/main.9829a6dc.chunk.css.map",
+    "static/js/2.912870cc.chunk.js.LICENSE.txt": "/Escuela-32/static/js/2.912870cc.chunk.js.LICENSE.txt",
+    "static/media/demo.3b358a37.mp4": "/Escuela-32/static/media/demo.3b358a37.mp4",
+    "static/media/logo.ceaddee2.png": "/Escuela-32/static/media/logo.ceaddee2.png",
+    "static/media/mechanic.7b3b7e8d.png": "/Escuela-32/static/media/mechanic.7b3b7e8d.png",
+    "static/media/index.css": "/Escuela-32/static/media/wave.4d6bdde1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.700d7dfb.js",
+    "static/js/2.912870cc.chunk.js",
+    "static/css/main.9829a6dc.chunk.css",
+    "static/js/main.f34a9c42.chunk.js"
+  ]
+}
