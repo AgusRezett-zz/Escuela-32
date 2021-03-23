@@ -73,8 +73,7 @@ body #root .second-root {
   margin-right: 7.5px;
   transition: all 250ms ease-in-out;
 }
-#navbar .principal_list li a::before,
-#navbar .principal_list li a::after {
+#navbar .principal_list li a::before, #navbar .principal_list li a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -92,8 +91,7 @@ body #root .second-root {
   bottom: 0;
   transform-origin: center;
 }
-#navbar .principal_list li a:hover:before,
-#navbar .principal_list li a:hover:after {
+#navbar .principal_list li a:hover:before, #navbar .principal_list li a:hover:after {
   transform: scaleX(1);
 }
 #navbar .principal_list li:hover > .secondary_list {
@@ -127,7 +125,6 @@ body #root .second-root {
     margin: 4px;
     border-radius: 25px;
   }
-
   #deploy-navbar-btn:active {
     background-color: #f1f1f1;
   }
@@ -173,5 +170,6 @@ body #root .second-root {
     transform: translateX(0);
   }
 }
+/*# sourceMappingURL=navbar.css.map */
 
 /*# sourceMappingURL=navbar.css.map */
