@@ -7,17 +7,20 @@ import "../css/navbar.css";
 export default class Navbar extends Component {
 	constructor() {
 		super();
-		this.state = { showNav: true };
+		this.state = { showNav: false, bodyOverflow: false };
 		this.showHideNav = this.showHideNav.bind(this);
 	}
 
 	showHideNav() {
 		this.setState({ showNav: !this.state.showNav });
+		this.setState({ bodyOverflow: !this.state.bodyOverflow });
+		const bodyTag = document.getElementsByTagName("body")[0];
+		bodyTag.style.overflowY = this.state.bodyOverflow ? null : "hidden";
 	}
 
 	responsiveNavState() {
 		return {
-			display: this.state.showNav ? "flex" : "none",
+			transform: this.state.showNav ? null : "translateX(-1000em)",
 		};
 	}
 

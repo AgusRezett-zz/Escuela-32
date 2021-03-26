@@ -9,9 +9,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  /* overflow-x: hidden; */
-}
 body #root {
   background-color: white;
 }
@@ -85,6 +82,11 @@ body #root .second-root {
   transform: rotate(90deg);
 }
 
+@media screen and (min-width: 900px) {
+  .principal_list {
+    transform: translateX(0) !important;
+  }
+}
 @media screen and (max-width: 900px) {
   #deploy-navbar-btn {
     position: absolute;
@@ -113,8 +115,7 @@ body #root .second-root {
   }
 
   .principal_list {
-    animation: hideShowNav 500ms -400ms;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 80px;
     width: 60% !important;
@@ -123,7 +124,7 @@ body #root .second-root {
     z-index: 1000;
     background-color: white;
     box-shadow: 0px -1px 6px 0px #00000085;
-    transition: all 150ms ease-in-out !important;
+    transition: all 250ms ease-in-out !important;
   }
   .principal_list li a {
     text-shadow: 0px 1px 2px #00000029;
@@ -138,21 +139,16 @@ body #root .second-root {
   .principal_list li .secondary_list li a {
     color: #2196f3 !important;
   }
-  .principal_list li:hover > .secondary_list {
+  .principal_list li:active > .secondary_list {
     transition: all 150ms ease-in-out !important;
     display: inline;
     visibility: visible;
     opacity: 1;
   }
 }
-@keyframes hideShowNav {
-  0% {
-    transform: translateX(-1000em);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+/* #deploy-navbar-btn > body {
+	overflow-y: hidden;
+} */
 /*# sourceMappingURL=navbar.css.map */
 
 /*# sourceMappingURL=navbar.css.map */
