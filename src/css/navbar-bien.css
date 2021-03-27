@@ -43,26 +43,19 @@ body #root .second-root {
 #navbar .principal_list li {
   display: inline;
 }
-#navbar .principal_list li ul {
+#navbar .principal_list li .secondary_list {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  display: flex;
-  flex-direction: column;
   transition: all 250ms ease-in-out;
   background-color: white;
   border-radius: 5px;
   transform: translateX(-30px);
 }
-#navbar .principal_list li ul li a,
-#navbar .principal_list li ul li div {
+#navbar .principal_list li .secondary_list li a {
   margin: 20px auto 20px auto;
 }
-#navbar .principal_list li div {
-  cursor: pointer;
-}
-#navbar .principal_list li a,
-#navbar .principal_list li div {
+#navbar .principal_list li a {
   display: block;
   position: relative;
   color: #303030;
@@ -74,14 +67,19 @@ body #root .second-root {
   text-align: center;
   transition: all 150ms ease-in-out;
 }
-#navbar .principal_list li a #menu-arrow,
-#navbar .principal_list li div #menu-arrow {
+#navbar .principal_list li a #menu-arrow {
   margin-right: 7.5px;
   transition: all 150ms ease-in-out;
 }
-#navbar .principal_list li a:hover,
-#navbar .principal_list li div:hover {
+#navbar .principal_list li a:hover {
   color: #2196f3;
+}
+#navbar .principal_list li:hover > .secondary_list {
+  visibility: visible;
+  opacity: 1;
+}
+#navbar .principal_list li:hover > a > #menu-arrow {
+  transform: rotate(90deg);
 }
 
 @media screen and (min-width: 900px) {
@@ -126,35 +124,31 @@ body #root .second-root {
     z-index: 1000;
     background-color: white;
     box-shadow: 0px -1px 6px 0px #00000085;
-    transition: all 1s ease-in-out !important;
+    transition: all 250ms ease-in-out !important;
   }
-  .principal_list li a,
-.principal_list li div {
+  .principal_list li a {
     text-shadow: 0px 1px 2px #00000029;
   }
-  .principal_list li .secondary_list li a,
-.principal_list li .secondary_list li div {
+  .principal_list li .secondary_list {
+    transition: all 150ms ease-in-out !important;
+    position: relative !important;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+  .principal_list li .secondary_list li a {
     color: #2196f3 !important;
   }
+  .principal_list li:active > .secondary_list {
+    transition: all 150ms ease-in-out !important;
+    display: inline;
+    visibility: visible;
+    opacity: 1;
+  }
 }
-.responsive_secondary_list {
-  position: relative !important;
-  display: inline !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-.show_secondary_list {
-  position: absolute !important;
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-.toggle_arrow {
-  transform: rotate(90deg);
-}
-
+/* #deploy-navbar-btn > body {
+	overflow-y: hidden;
+} */
 /*# sourceMappingURL=navbar.css.map */
 
-/*# sourceMappingURL=navbar.css.map */
+/*# sourceMappingURL=navbar-bien.css.map */
