@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Escuela-32/static/css/main.d1495b1f.chunk.css",
-    "main.js": "/Escuela-32/static/js/main.1ef84397.chunk.js",
-    "main.js.map": "/Escuela-32/static/js/main.1ef84397.chunk.js.map",
+    "main.js": "/Escuela-32/static/js/main.7f0f1611.chunk.js",
+    "main.js.map": "/Escuela-32/static/js/main.7f0f1611.chunk.js.map",
     "runtime-main.js": "/Escuela-32/static/js/runtime-main.700d7dfb.js",
     "runtime-main.js.map": "/Escuela-32/static/js/runtime-main.700d7dfb.js.map",
     "static/js/2.912870cc.chunk.js": "/Escuela-32/static/js/2.912870cc.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.700d7dfb.js",
     "static/js/2.912870cc.chunk.js",
     "static/css/main.d1495b1f.chunk.css",
-    "static/js/main.1ef84397.chunk.js"
+    "static/js/main.7f0f1611.chunk.js"
   ]
 }
