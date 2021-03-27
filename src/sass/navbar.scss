@@ -20,6 +20,10 @@ body {
 	}
 }
 
+#root {
+	overflow-x: hidden;
+}
+
 #navbar {
 	position: fixed;
 	width: 100%;
@@ -31,7 +35,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	box-shadow: 0px -1px 6px 0px #00000085;
-	z-index: 1001;
+	z-index: 12;
 
 	.principal_list {
 		width: 100%;
@@ -129,14 +133,13 @@ body {
 	.principal_list {
 		position: fixed;
 		left: 0;
-		top: 80px;
+		top: 79px;
 		width: 60% !important;
-		height: calc(100vh - 80px);
+		height: calc(100vh - 79px);
 		flex-direction: column !important;
-		z-index: 1000;
 		background-color: white;
-		box-shadow: 0px -1px 6px 0px #00000085;
-		transition: all 1s ease-in-out !important;
+		/* box-shadow: 0px -1px 6px 0px #00000085; */
+		transition: all 500ms ease-in-out !important;
 
 		li {
 			a,
@@ -170,6 +173,22 @@ body {
 
 .toggle_arrow {
 	transform: rotate(90deg);
+}
+
+.li_toggle_color {
+	color: #2196f3 !important;
+}
+
+#responsive-mask {
+	transition: all 500ms ease-in-out;
+}
+
+.toggle_responsive_mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	background-color: #26424bb9;
 }
 
 /*# sourceMappingURL=navbar.css.map */

@@ -1,3 +1,5 @@
+@import "mixins";
+
 .demo-section {
 	width: 100%;
 	height: 550px;
@@ -58,13 +60,6 @@
 			}
 		}
 	}
-}
-
-.wave5 {
-	animation: animate 60s ease-in-out alternate-reverse infinite;
-	z-index: 1000;
-	opacity: 1;
-	animation-delay: -10s;
 }
 
 .speciality-section {
@@ -179,24 +174,14 @@
 }
 
 .wave-bottom {
-	position: absolute;
-	width: 100%;
-	height: 100px;
-	background-image: url("../assets/wave.svg");
-	background-size: cover;
-	margin-top: 0px;
-	align-self: flex-start;
+	@include waveProps(absolute, flex-start);
+	margin-top: -5px;
 	transform: rotate(180deg);
 }
 
 .wave-top {
-	position: absolute;
-	width: 100%;
-	height: 100px;
-	background-image: url("../assets/wave.svg");
-	background-size: cover;
+	@include waveProps(absolute, flex-start);
 	top: -100px;
-	align-self: flex-start;
 }
 
 /*# sourceMappingURL=index.css.map */

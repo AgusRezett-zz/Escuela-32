@@ -1,0 +1,15 @@
+@mixin wave($duration, $direction, $z-index, $opacity, $delay) {
+	animation: animate $duration ease-in-out $direction infinite;
+	z-index: $z-index;
+	opacity: $opacity;
+	animation-delay: $delay;
+}
+
+@mixin waveProps($position, $alignself) {
+	position: $position;
+	width: 100%;
+	height: 100px;
+	background-image: url("../assets/wave.svg");
+	background-size: cover;
+	align-self: $alignself;
+}

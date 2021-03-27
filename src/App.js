@@ -12,11 +12,16 @@ import career from "./assets/mechanic.png";
 import "./css/index.css";
 
 export default class App extends Component {
+	status = {
+		responsiveMask: false,
+	};
+
 	render() {
 		return (
 			<div className="second-root">
 				<Navbar />
 				<Header />
+				<div id="responsive-mask" />
 				<section className="demo-section">
 					<ReactPlayer id="demo-video" url={demovideo} width="fit-content" height={undefined} playing muted loop />
 					<div className="demo-mask"></div>
@@ -30,8 +35,7 @@ export default class App extends Component {
 				</section>
 				<section className="speciality-section">
 					<div className="wave-top wave5" />
-					<div className="speciality-content">
-					</div>
+					<div className="speciality-content"></div>
 					<div className="speciality-illustration">
 						<h2>
 							Estudiá como
