@@ -23,6 +23,9 @@ export default function Navbar() {
 		if (displayWidth < 900) {
 			secondnav.classList.remove("show_secondary_list");
 		} else {
+			setResponsiveNav(false);
+			setResponsiveOverflow(false);
+			document.getElementById("responsive-mask").classList.remove("toggle_responsive_mask");
 			secondnav.classList.remove("responsive_secondary_list");
 		}
 
@@ -36,11 +39,15 @@ export default function Navbar() {
 		setResponsiveNav(!responsiveNav);
 		setResponsiveOverflow(!responsiveOverflow);
 		const bodyTag = document.getElementsByTagName("body")[0];
-		bodyTag.style.overflowY = responsiveOverflow ? null : "hidden";
+		bodyTag.style.overflowY = responsiveOverflow ? null : "hidden"; //remover los hidden al resize de de la pantalla
 		const root = document.getElementById("root");
 		root.style.overflowY = responsiveOverflow ? null : "hidden";
 		root.style.overflowX = "hidden";
-		document.getElementById("responsive-mask").classList.toggle("toggle_responsive_mask");
+		if (responsiveNav === false) {
+			document.getElementById("responsive-mask").classList.add("toggle_responsive_mask");
+		} else {
+			document.getElementById("responsive-mask").classList.remove("toggle_responsive_mask");
+		}
 	};
 
 	const responsiveNavState = () => {

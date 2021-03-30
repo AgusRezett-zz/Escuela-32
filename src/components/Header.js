@@ -12,8 +12,6 @@ export default class Header extends Component {
 				<p id="header_name_pt2">GRAL. JOSÉ DE SAN MARTÍN</p>
 				<div className="wave wave1" />
 				<div className="wave wave2" />
-				<div className="wave wave3" />
-				<div className="wave wave4" />
 			</header>
 		);
 	}
