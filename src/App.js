@@ -23,7 +23,7 @@ export default class App extends Component {
 				<Header />
 				<div id="responsive-mask" />
 				<section className="demo-section">
-					<ReactPlayer id="demo-video" url={demovideo} width="fit-content" height={undefined} playing muted loop />
+					<ReactPlayer id="demo-video" url={demovideo} width="fit-content" height={550} playing muted loop />
 					<div className="demo-mask"></div>
 					<div className="wave-bottom wave5" />
 					<div className="demo-content">
@@ -34,7 +34,7 @@ export default class App extends Component {
 					</div>
 				</section>
 				<section className="speciality-section">
-					<div className="wave-top wave5" />
+					<div className="wave-top wave-separator" />
 					<div className="speciality-content"></div>
 					<div className="speciality-illustration">
 						<h2>
