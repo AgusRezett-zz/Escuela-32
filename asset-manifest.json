@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Escuela-32/static/css/main.e0ecaa9e.chunk.css",
+    "main.css": "/Escuela-32/static/css/main.e5b50efe.chunk.css",
     "main.js": "/Escuela-32/static/js/main.369b0754.chunk.js",
     "main.js.map": "/Escuela-32/static/js/main.369b0754.chunk.js.map",
     "runtime-main.js": "/Escuela-32/static/js/runtime-main.700d7dfb.js",
@@ -8,7 +8,7 @@
     "static/js/2.da08e4ea.chunk.js": "/Escuela-32/static/js/2.da08e4ea.chunk.js",
     "static/js/2.da08e4ea.chunk.js.map": "/Escuela-32/static/js/2.da08e4ea.chunk.js.map",
     "index.html": "/Escuela-32/index.html",
-    "static/css/main.e0ecaa9e.chunk.css.map": "/Escuela-32/static/css/main.e0ecaa9e.chunk.css.map",
+    "static/css/main.e5b50efe.chunk.css.map": "/Escuela-32/static/css/main.e5b50efe.chunk.css.map",
     "static/js/2.da08e4ea.chunk.js.LICENSE.txt": "/Escuela-32/static/js/2.da08e4ea.chunk.js.LICENSE.txt",
     "static/media/demo.794d80fe.mp4": "/Escuela-32/static/media/demo.794d80fe.mp4",
     "static/media/logo.ceaddee2.png": "/Escuela-32/static/media/logo.ceaddee2.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.700d7dfb.js",
     "static/js/2.da08e4ea.chunk.js",
-    "static/css/main.e0ecaa9e.chunk.css",
+    "static/css/main.e5b50efe.chunk.css",
     "static/js/main.369b0754.chunk.js"
   ]
 }
