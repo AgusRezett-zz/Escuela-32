@@ -52,7 +52,7 @@ export default class App extends Component {
 							</div>
 						</div>
 						<div className="btn-container">
-							<div className="btn concerns">Incumbencias</div>
+							<div className="btn concerns">Incumbencias (cambio)</div>
 							<div className="btn syllabus">Plan de estudios</div>
 						</div>
 					</div>
